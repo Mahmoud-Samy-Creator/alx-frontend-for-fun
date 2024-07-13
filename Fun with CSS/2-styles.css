@@ -1,0 +1,17 @@
+.toggle-cb {
+    display: none;
+}
+.toggle-label {
+    position: relative;
+}
+.toggle-inner {
+    content: url('images/unchecked.png');
+}
+.toggle-cb:checked + .toggle-label .toggle-inner {
+    content: "";
+    position: absolute;
+}
+.toggle-cb:checked + .toggle-label .toggle-switch {
+    content: url('images/checked.png');
+    position: absolute;
+}
