@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+    position: relative;
+}
+a::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: purple;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+}
+a:hover::after {
+    width: 100%;
+}
