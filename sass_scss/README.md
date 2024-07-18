@@ -75,5 +75,113 @@ Repo:
 * File: `0-debug_log.scss`
 ***
 ### 1. Color variable
+Write a Sass file that assigns the text color `#3D3D3D` to the HTML tags `body` and `p`.
+* You must use a Sass variable
+```
+guillaume@ubuntu:~/$ sass 1-color_variable.scss | tail -n +2
+body {
+  color: #3D3D3D; }
 
+p {
+  color: #3D3D3D; }
+guillaume@ubuntu:~/$ 
+```
 
+Repo:
+
+* GitHub repository: `alx-frontend-for-fun`
+* Directory: `sass_scss`
+* File: `1-color_variable.scss`
+***
+
+### 2. Colors
+Write a Sass file that assigns:
+
+* The text color #3D3D3D to the HTML tags body and p
+* The background color #6D6D6D to the HTML tags body and h2
+* You must use 2 Sass variables
+
+```
+guillaume@ubuntu:~/$ sass 2-color_variables.scss | tail -n +2
+body {
+  color: #3D3D3D;
+  background-color: #6D6D6D; }
+
+p {
+  color: #3D3D3D; }
+
+h2 {
+  background-color: #6D6D6D; }
+guillaume@ubuntu:~/$ 
+```
+Repo:
+
+* GitHub repository: `alx-frontend-for-fun`
+* Directory: `sass_scss`
+* File: `2-color_variables.scss`
+***
+
+### 4. Nested class
+Write a Sass file that assigns:
+
+* Text color `#3D3D3D` to elements inside `body` tags
+* Text color `#FF0000` to any elements of class `.red` inside `body` tags
+* You must use nested declarations
+```
+guillaume@ubuntu:~/$ sass 4-nested_class.scss | tail -n +2
+body {
+  color: #3D3D3D; }
+  body .red {
+    color: #FF0000; }
+guillaume@ubuntu:~/$ 
+```
+Repo:
+
+* GitHub repository: `alx-frontend-for-fun`
+* Directory: `sass_scss`
+* File: `4-nested_class.scss`
+***
+
+### 5. Nested child
+Write a Sass file that assigns:
+
+* Text color #3D3D3D to elements inside body tags
+* Text color #FF0000 to any elements of class .red that are th
+e first children of the body
+* You must use nested declarations
+
+```
+guillaume@ubuntu:~/$ sass 5-nested_child.scss | tail -n +2
+body {
+  color: #3D3D3D; }
+  body > .red {
+    color: #FF0000; }
+guillaume@ubuntu:~/$ 
+```
+
+Repo:
+
+* GitHub repository: `alx-frontend-for-fun`
+* Directory: `sass_scss`
+* File: `5-nested_child.scss`
+***
+
+### 6. Nested hover
+Write a Sass file that assigns:
+
+* Text color `#FF0000` to `button` tags
+* When the user hovers over `button` tags, text color should change to `#00FF00`
+* You must use nested declarations
+```
+guillaume@ubuntu:~/$ sass 6-nested_hover.scss | tail -n +2
+button {
+  color: #FF0000; }
+  button:hover {
+    color: #00FF00; }
+guillaume@ubuntu:~/$ 
+```
+Repo:
+
+* GitHub repository: `alx-frontend-for-fun`
+* Directory: `sass_scss`
+* File: `6-nested_hover.scss`
