@@ -4,14 +4,11 @@
     You must use nested declarations
 */
 
-%resetBody {
+body {
     margin: 0;
     padding: 0;
-}
 
-body {
-    @extend %resetBody;
-    & p {
+    p {
         margin: 10px;
     }
 }
