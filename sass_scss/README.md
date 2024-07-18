@@ -185,3 +185,28 @@ Repo:
 * GitHub repository: `alx-frontend-for-fun`
 * Directory: `sass_scss`
 * File: `6-nested_hover.scss`
+***
+
+### 7. Nested and nested again
+Write a Sass file that assigns:
+
+* Font size `14px` to all `body` tags
+* Font size `16px` to all `h1` tags inside `body` tags
+* Font size `12px` to `h1` tags of class `.smaller` inside `body` tags
+* You must use nested declarations
+```
+guillaume@ubuntu:~/$ sass 7-nested_deeper.scss | tail -n +2
+body {
+  font-size: 14px; }
+  body h1 {
+    font-size: 16px; }
+    body h1.smaller {
+      font-size: 12px; }
+guillaume@ubuntu:~/$ 
+```
+Repo:
+
+* GitHub repository: `alx-frontend-for-fun`
+* Directory: `sass_scss`
+* File: `7-nested_deeper.scss`
+***
