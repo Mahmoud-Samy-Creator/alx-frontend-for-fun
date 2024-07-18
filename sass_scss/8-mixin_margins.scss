@@ -1,0 +1,13 @@
+/* Writing SaSS file */
+
+@mixin marginal($pixels) {
+    margin-left: #{$pixels};
+    margin-right: #{$pixels};
+}
+
+body {
+    @include marginal(10px);
+}
+div {
+    @include marginal(15px);
+}
