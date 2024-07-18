@@ -262,3 +262,34 @@ Repo:
 * File: `9-extend_list.scss`
 ***
 
+### 10. Import colors
+Write a Sass file that assigns:
+
+* Text color `$red` from `10-colors.scss` to the class `.red`
+* Text color `$green` from `10-colors.scss` to the class `.green`
+* Text color $blue from `10-colors.scss` to the class `.blue`
+* You must use `@import`
+
+```
+guillaume@ubuntu:~/$ cat 10-colors.scss
+/* All my colors */
+$red: #FF0000;
+$green: #00FF00;
+$blue: #0000FF;
+guillaume@ubuntu:~/$ sass 10-import_colors.scss | tail -n +3
+.red {
+  color: #FF0000; }
+
+.green {
+  color: #00FF00; }
+
+.blue {
+  color: #0000FF; }
+guillaume@ubuntu:~/$ 
+```
+Repo:
+
+* GitHub repository: `alx-frontend-for-fun`
+* Directory: `sass_scss`
+* File: `10-import_colors.scss`
+***
