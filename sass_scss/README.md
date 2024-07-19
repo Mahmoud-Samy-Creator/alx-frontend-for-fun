@@ -416,9 +416,32 @@ Write a Sass file that assigns:
 * Font size `18px` to `h1` tags, when your screen width is smaller than `960px`
 * Font size `16px` to h1` tags, when your screen width is smaller than `640px`
 * Font size `14px` to `h1` tags, when your screen width is smaller than `320px`
-* Text color #1D1D1D to h1.small tags, when your screen width is smaller than `320px`
+* Text color #1D1D1D to h1.small tags, when your screen width is smaller than `320px`  
+
 Repo:
 
-* GitHub repository: alx-frontend-for-fun
-* Directory: sass_scss
-* File: 102-media_query.scss
+* GitHub repository: `alx-frontend-for-fun`
+* Directory: `sass_scss`
+* File: `102-media_query.scss`
+***
+
+### 16. Sort!
+
+Write a Sass file that sorts the variable `$list_to_sort` and prints the sorted list in the debug output.
+```
+guillaume@ubuntu:~/$ cat 103-sort_list.scss 
+$list_to_sort: john anna zoe kim felicia carrie;
+guillaume@ubuntu:~/$ sass 103-sort_strings.scss | tail -n +2
+103-sort_strings.scss:64 DEBUG: anna carrie felicia john kim zoe
+guillaume@ubuntu:~/$ 
+```
+
+Repo:
+
+* GitHub repository: `alx-frontend-for-fun`
+* Directory: `sass_scss`
+* File: `103-sort_strings.scss`
+***
+Author: [Mahmoud Samy](https://github.com/Mahmoud-Samy-Creator)   
+
+
