@@ -387,3 +387,38 @@ Repo:
 * Directory: `sass_scss`
 * File: `100-loop_col.scss`
 ***
+
+### 14. Media query #0
+Write a Sass file that assigns:
+
+* Font size `20px` to `h1` tags
+* Font size `14px` to `h1` tags, when your screen width is smaller than `320px`
+```
+guillaume@ubuntu:~/$ sass 101-media_query.scss | tail -n +2
+h1 {
+  font-size: 20px; }
+  @media screen and (max-width: 320px) {
+    h1 {
+      font-size: 14px; } }
+guillaume@ubuntu:~/$ 
+```
+Repo:
+
+* GitHub repository: `alx-frontend-for-fun`
+* Directory: `sass_scss`
+* File: `101-media_query.scss`
+***
+
+### 15. Media query #1
+Write a Sass file that assigns:
+
+* Font size `20px` to `h1` tags
+* Font size `18px` to `h1` tags, when your screen width is smaller than `960px`
+* Font size `16px` to h1` tags, when your screen width is smaller than `640px`
+* Font size `14px` to `h1` tags, when your screen width is smaller than `320px`
+* Text color #1D1D1D to h1.small tags, when your screen width is smaller than `320px`
+Repo:
+
+* GitHub repository: alx-frontend-for-fun
+* Directory: sass_scss
+* File: 102-media_query.scss
