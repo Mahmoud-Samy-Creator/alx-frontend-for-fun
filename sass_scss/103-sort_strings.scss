@@ -1,6 +1,5 @@
 /* 16. Sort! */
 
-$sortedList: sort($list_to_sort);
+$sorted_list: sort($list_to_sort);
 
-@debug $sortedList;
-
+@debug $sorted_list;
